@@ -104,7 +104,7 @@ function scriviDoc() {
         commOut = `<div class="comments" id="${commTar[j].id}"><div class="comm-dates"><div id="cont-email"><b id="email-comm">${commTar[j].email}</b></div><b id="tit-comm">${commTar[j].name}</b></div><p id="b-comm">${commTar[j].body}</p><div id="cont-del"><button type="button" class= "delete">ELIMINA</button></div></div></br>`;
 
     container.innerHTML += `<div class="cont-post" id="Articolo${numPost}"><div id="post-dates"><h1>${postMem[i].title}</h1><p>${postMem[i].body}</p></div><b id="sect-comm">COMMENTI:</b>
-        <div id="cont-comments"><p>${commOut}</p></div> <div class="Commenta"><p id="comm-invite">LASCIA UN COMMENTO</p> <div class="cont-newEmail"><p>EMAIL</p><input type="email" placeholder="Scrivi la tua email" required></div> <div class="cont-tit"><p>TITOLO</p><input type="text" placeholder="Scrivi il titolo del commento"></div><div class="cont-newComm"><p>SCRIVI COMMENTO</p><textarea class="newComm" placeholder="Scrivi un commento..."></textarea></div> <div class="cont-btn"> <button type="button" class="btn-sub">INVIA</button></div>  </div>
+        <div id="cont-comments">${commOut}</div> <div class="Commenta"><p id="comm-invite">LASCIA UN COMMENTO</p> <div class="cont-newEmail"><p>EMAIL</p><input type="email" placeholder="Scrivi la tua email" required></div> <div class="cont-tit"><p>TITOLO</p><input type="text" placeholder="Scrivi il titolo del commento"></div><div class="cont-newComm"><p>SCRIVI COMMENTO</p><textarea class="newComm" placeholder="Scrivi un commento..."></textarea></div> <div class="cont-btn"> <button type="button" class="btn-sub">INVIA</button></div>  </div>
       </div></br></br>`;
   }
   document.getElementById(localStorage.artCorr).style.visibility = "visible";
